@@ -55,6 +55,16 @@ extension ThrowableLookdown where CodingPath: CodingPathWithOptionalProtocol {
     }
 }
 
+extension ThrowableLookdown where CodingPath: CodingPathWithUnsafeProtocol {
+    
+    /// Makes last component unsafe optional
+    /// - Parameter lhs: Lookdown to make last component optional
+    /// - Returns: Optional Lookdown
+    public static postfix func |!(lhs: ThrowableLookdown) -> CodingPath.UnsafeOperatorLookdown {
+        lhs.codingPath.unsafeOperatorLookdown(rawData: lhs.rawData)
+    }
+}
+
 // MARK: Convert Lookdown property to given type
 
 extension ThrowableLookdown {
@@ -63,7 +73,7 @@ extension ThrowableLookdown {
     private var currentValue: Any {
         get throws {
             try self.codingPath.path.reduce(self.rawData) { value, component in
-                try component.newValue(from: value)
+                try component.newThrowableValue(from: value)
             }
         }
     }

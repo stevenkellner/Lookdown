@@ -1,4 +1,4 @@
-# ``Lookdown``
+# Lookdown
 
 Lookdown is used to dynamically look up values in JSON data or string.
 
@@ -83,7 +83,7 @@ let africaPopulation = try Int(lookdown: lookdown.africa|?.population)
 // Type Int? and can throw an error
 ```
 
-This statement can still throw an error as it's unknown if the property popultation exists and
+This statement can still throw an error as it's unknown if the property population exists and
 if this property is from type `Int`. When you make all properties optional the Lookdown
 statement is optional and doesn't throw an error even if the property isn't from the type to
 cast to:
@@ -91,4 +91,23 @@ cast to:
 ```swift
 let africaPopulation = Int(lookdown: lookdown.africa|?.population|?)
 // Type Int? but throws no error
+```
+
+When you are sure a value with this property name exist and the value isn't null, you can use
+the unsafe optional operator `|!`to unwrap the value. It raises a fatal error if there is
+an error.
+
+```swift
+let europePopulation = try Int(lookdown: lookdown.europe|!.population)
+// Type Int but can throw an error
+```
+
+This statement can still throw an error as it's unknown if the property population exists and
+if this property is from type `Int`. When you make all properties unsafe optional the Lookdown
+statement isn't optional and doesn't throw an error even if the property isn't from the type to
+cast to:
+
+```swift
+let europePopulation = Int(lookdown: lookdown.europe|!.population|!)
+// Type Int and throws no error
 ```

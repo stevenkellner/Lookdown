@@ -52,3 +52,4 @@ extension Array {
 }
 
 postfix operator |?
+postfix operator |!

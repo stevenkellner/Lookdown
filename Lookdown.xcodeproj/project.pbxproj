@@ -17,6 +17,7 @@
 		B0EE46F526BDB4FB007D5216 /* ThrowableLookdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE46F426BDB4FB007D5216 /* ThrowableLookdown.swift */; };
 		B0EE46F726BDB50D007D5216 /* OptionalLookdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE46F626BDB50D007D5216 /* OptionalLookdown.swift */; };
 		B0EE46F926BDB51F007D5216 /* OptionalThrowableLookdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE46F826BDB51F007D5216 /* OptionalThrowableLookdown.swift */; };
+		B0F69DAB26BEE49A00F724AB /* UnsafeLookdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F69DAA26BEE49A00F724AB /* UnsafeLookdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		B0EE46F426BDB4FB007D5216 /* ThrowableLookdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowableLookdown.swift; sourceTree = "<group>"; };
 		B0EE46F626BDB50D007D5216 /* OptionalLookdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalLookdown.swift; sourceTree = "<group>"; };
 		B0EE46F826BDB51F007D5216 /* OptionalThrowableLookdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalThrowableLookdown.swift; sourceTree = "<group>"; };
+		B0F69DAA26BEE49A00F724AB /* UnsafeLookdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsafeLookdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B01D9E7C26B97437002A1EB3 /* Lookdown.docc */,
 				B01D9E9226B974E1002A1EB3 /* Lookdown.swift */,
 				B0EE46F626BDB50D007D5216 /* OptionalLookdown.swift */,
+				B0F69DAA26BEE49A00F724AB /* UnsafeLookdown.swift */,
 				B0EE46F426BDB4FB007D5216 /* ThrowableLookdown.swift */,
 				B0EE46F826BDB51F007D5216 /* OptionalThrowableLookdown.swift */,
 				B0EE46F026BD9C8D007D5216 /* Errors.swift */,
@@ -208,6 +211,7 @@
 				B0EE46F726BDB50D007D5216 /* OptionalLookdown.swift in Sources */,
 				B0EE46F526BDB4FB007D5216 /* ThrowableLookdown.swift in Sources */,
 				B0EE46F126BD9C8D007D5216 /* Errors.swift in Sources */,
+				B0F69DAB26BEE49A00F724AB /* UnsafeLookdown.swift in Sources */,
 				B01D9E9326B974E1002A1EB3 /* Lookdown.swift in Sources */,
 				B0EE46F926BDB51F007D5216 /* OptionalThrowableLookdown.swift in Sources */,
 				B0EE46EF26BD822B007D5216 /* CodingPathComponent.swift in Sources */,
